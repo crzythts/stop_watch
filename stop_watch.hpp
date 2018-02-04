@@ -4,6 +4,7 @@
 #include <chrono>
 #include <utility>
 #include <iostream>
+#include <cassert>
 
 class stop_watch {
     std::chrono::high_resolution_clock::time_point last_time_point;
