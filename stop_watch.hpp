@@ -33,6 +33,14 @@ class stop_watch {
       return std::chrono::duration_cast<std::chrono::hours>(
           time_duration).count();
     }
+    double minutes() {
+      return std::chrono::duration_cast<std::chrono::minutes>(
+          time_duration).count();
+    }
+    double seconds() {
+      return std::chrono::duration_cast<std::chrono::seconds>(
+          time_duration).count();
+    }
     friend std::ostream& operator<<(std::ostream& out, stop_watch sw) {
       std::chrono::hours h = std::chrono::duration_cast<
           std::chrono::hours>(sw.time_duration);
